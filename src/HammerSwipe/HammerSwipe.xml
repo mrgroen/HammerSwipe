@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="HammerSwipe.widget.HammerSwipe" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>HammerSwipe</name>
+  <description>Swipe a DOM element left or right to trigger a microflow.</description>
+
+  <icon>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABmklEQVRYR2NkGGDAOMD2M4w6YDQERkNgNATwhgBv5ScNdha2aW9uvPZmWC37HV5opf3nEhb/Vf3/H0MUExODLMN/hqf/GRmWvH3J1sowi/EbsjoRsZ9bf/79lf65ne8WtkIPpwNAlrMxs+3//5+h810rxwS45tgX3CLyQgcYmRhN0A389///ybc3XjoiO1ak+kcJAyNj4c+/Px2xOQKrA3BazsDAIFz7s5WJkanq7///9///+xv3/hbHKUGV76aMTCyLmJkZlf7/+9f8poW9Dtlx+ByB4QB8loMMFan5+ZCRiUnuz98/tu9bOY/ALBKs/m7DwsxyGOSwd81sSuihg8sRaA74zyhU/fscMzOjAaFK6vV1FhaG1Yx/4epC/zOLav75Q0jf/3//z7xpYTOFqSM5BETrfv8HaX7dxIqhF58ckSEAcRe+aCDHASSlAVjQ4HIEqQ4gKxcgOwK9HIA5AF9cw6Mn7T8X2eUALgtIcgChFMnAQHqLaNA4gNRcgCswSK4NR0Ng0IQAUdlwWOeC0RAYuSFARMImSQkAGjkaMLzZ2l8AAAAASUVORK5CYII=</icon>
+
+  <properties>
+        <property key="dojoQuery" type="string" required="true" defaultValue="">
+            <caption>Dojo query</caption>
+            <category>Behavior</category>
+            <description>Select the DOM node based on a CSS selector.</description>
+        </property>
+        <property key="swipeAnimation" type="boolean" defaultValue="false">
+            <caption>Swipe animation</caption>
+            <category>Behavior</category>
+            <description>Animated element when swiping.</description>
+        </property>
+        <property key="leftMicroflow" type="microflow" required="false" defaultValue="">
+            <caption>Microflow Left Swipe</caption>
+            <category>Behavior</category>
+            <description>The microflow to execute on left swipe.</description>
+            <returnType type="Boolean"></returnType>
+        </property>
+        <property key="rightMicroflow" type="microflow" required="false" defaultValue="">
+            <caption>Microflow Right Swipe</caption>
+            <category>Behavior</category>
+            <description>The microflow to execute on right swipe.</description>
+            <returnType type="Boolean"></returnType>
+        </property>
+	</properties>
+</widget>
+
